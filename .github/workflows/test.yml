@@ -1,9 +1,8 @@
-name: Build and Push tts-mandarin for amd64
+name: CI
 
-# Configure Manual Trigger
 on:
-  workflow_dispatch:
-    
+  push:
+    branches: [main]
 
 jobs:
   build:
@@ -12,7 +11,7 @@ jobs:
     steps:
       - uses: privapps/TTS-Mandarin@main
         with:
-          text: '你好'
+          text: '雄起'
           voice: '18'
           content: 'out.mp3'
       - run: ls -l 
