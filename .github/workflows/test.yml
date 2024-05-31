@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: privapps/TTS-Mandarin@main
         with:
-          text: '减肥的牲口见料福鼎市李开复但是'
+          text: '你好'
           voice: '18'
           content: 'out.mp3'
       - run: ls -l 
